@@ -8,20 +8,20 @@ A neural network toolkit built on pytorch/opencv/numpy that includes neural netw
 
  - Advanced neural network modules, such as EfficientNet, ResNet, SENet, Xception, DenseNet, FocalLoss, AdaboundW
  - Ultra-efficient dataloader that allows you to take full advantage of GPU
- - High performance and multifunctional data augmentation(See [woodsgao/image_augments](https://github.com/woodsgao/image_augments))
+ - High performance and multifunctional data augmentation(See [woodsgao/image_augments](https://github.com/Bazingaliu/image_augments))
 
 ## Installation
 
 ### As a subtree
 
-    git remote add pytorch_modules https://github.com/woodsgao/pytorch_modules 
+    git remote add pytorch_modules https://github.com/Baizngaliu/pytorch_modules 
     git subtree add --prefix=<subtree_path> pytorch_modules master
     cd <subtree_path>
     pip install -r requirements.txt
 
 ### As a repository
 
-    git clone https://github.com/woodsgao/pytorch_modules
+    git clone https://github.com/Bazingaliu/pytorch_modules
     cd pytorch_modules
     pip install -r requirements.txt
 
@@ -41,7 +41,7 @@ This module contains a variety of neural network layers, modules and loss functi
 
 ### pytorch_modules.augments
 
-See [woodsgao/image_augments](https://github.com/woodsgao/image_augments) for more details.
+See [Bazingaliu/image_augments](https://github.com/Bazingaliu/image_augments) for more details.
 
 ### pytorch_modules.backbones
 
@@ -61,6 +61,6 @@ This module includes a series of dataset classes integrated from `pytorch_module
 The loading method of `pytorch_modules.datasets.BasicDataset` is modified to cache data with `LMDB` to speed up data loading. This allows your gpu to be fully used for model training without spending a lot of time on data loading and data augmentation. 
 Please see the corresponding repository for detailed usage.
 
- - `pytorch_modules.datasets.ClassificationDataset` > [woodsgao/pytorch_classification](https://github.com/woodsgao/pytorch_classification)
- - `pytorch_modules.datasets.SegmentationDataset` > [woodsgao/pytorch_segmentation](https://github.com/woodsgao/pytorch_segmentation)
+ - `pytorch_modules.datasets.ClassificationDataset` > [woodsgao/pytorch_classification](https://github.com/Bazingaliu/pytorch_classification)
+ - `pytorch_modules.datasets.SegmentationDataset` > [woodsgao/pytorch_segmentation](https://github.com/Bazingaliu/pytorch_segmentation)
 
